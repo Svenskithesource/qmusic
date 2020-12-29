@@ -1,0 +1,1308 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Classes &mdash; QMusic API Wrapper  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Usage" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> QMusic API Wrapper
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Classes</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">QMusic API Wrapper</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Classes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/classes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-qmusic">
+<span id="classes"></span><h1>Classes<a class="headerlink" href="#module-qmusic" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="qmusic.Qmusic">
+<em class="property">class </em><code class="sig-prename descclassname">qmusic.</code><code class="sig-name descname">Qmusic</code><a class="headerlink" href="#qmusic.Qmusic" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="qmusic.Qmusic.get_channel">
+<code class="sig-name descname">get_channel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">slug</span><span class="o">=</span><span class="default_value">'qmusic_be'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Qmusic.get_channel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the channel from the slug.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>slug</strong> (<em>str</em><em>, </em><em>optional</em>) – The slug of the channel, defaults to “qmusic_be”</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Returns a Channel object or None if it isn’t available</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#qmusic.Channel" title="qmusic.Channel"><code class="xref py py-class docutils literal notranslate"><span class="pre">Channel</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="qmusic.Channel">
+<em class="property">class </em><code class="sig-prename descclassname">qmusic.</code><code class="sig-name descname">Channel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">json</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Channel" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="qmusic.Channel.background_image">
+<code class="sig-name descname">background_image</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Channel.background_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets an url of the background image of the channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the background image url</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Channel.color">
+<code class="sig-name descname">color</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Channel.color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the colors of the channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a Color object</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#qmusic.Color" title="qmusic.Color"><code class="xref py py-class docutils literal notranslate"><span class="pre">Color</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Channel.current_song">
+<code class="sig-name descname">current_song</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Channel.current_song" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the current song playing on the channel.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a Song object</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#qmusic.Song" title="qmusic.Song"><code class="xref py py-class docutils literal notranslate"><span class="pre">Song</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Channel.logo">
+<code class="sig-name descname">logo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Channel.logo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the logo url of the channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the logo url</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Channel.name">
+<code class="sig-name descname">name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Channel.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the name of the channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the name of the channel</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Channel.next_song">
+<code class="sig-name descname">next_song</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Channel.next_song" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the next song on the channel. The next song might not be available, in that case it returns None.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a Song object if the next song is available or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#qmusic.Song" title="qmusic.Song"><code class="xref py py-class docutils literal notranslate"><span class="pre">Song</span></code></a>, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Channel.search_terms">
+<code class="sig-name descname">search_terms</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Channel.search_terms" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the slug of the channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the slug</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Channel.slug">
+<code class="sig-name descname">slug</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Channel.slug" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the slug of the channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the slug</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Channel.station_id">
+<code class="sig-name descname">station_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Channel.station_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the station id of the channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the station id</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Channel.streams">
+<code class="sig-name descname">streams</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Channel.streams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the logo url of the channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the logo url</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="qmusic.Streams">
+<em class="property">class </em><code class="sig-prename descclassname">qmusic.</code><code class="sig-name descname">Streams</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">json</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Streams" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="qmusic.Streams.aac">
+<code class="sig-name descname">aac</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Streams.aac" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list with Stream objects that contains the source url and extra information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a list with Stream objects</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list, <a class="reference internal" href="#qmusic.Stream" title="qmusic.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Streams.android">
+<code class="sig-name descname">android</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Streams.android" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list with Mobile objects that contain the high quality url, low quality url and the video url</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns an Android object</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#qmusic.Android" title="qmusic.Android"><code class="xref py py-class docutils literal notranslate"><span class="pre">Android</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Streams.hls">
+<code class="sig-name descname">hls</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Streams.hls" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list with Stream objects that contains the source url and extra information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a list with Stream objects</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list, <a class="reference internal" href="#qmusic.Stream" title="qmusic.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Streams.iphone">
+<code class="sig-name descname">iphone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Streams.iphone" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list with Mobile objects that contain the live url and video url</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns an Iphone object</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#qmusic.Iphone" title="qmusic.Iphone"><code class="xref py py-class docutils literal notranslate"><span class="pre">Iphone</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Streams.mobile">
+<code class="sig-name descname">mobile</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Streams.mobile" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list with Mobile objects that contain the audio url, video url and the live url</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a Mobile object</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#qmusic.Mobile" title="qmusic.Mobile"><code class="xref py py-class docutils literal notranslate"><span class="pre">Mobile</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Streams.mp3">
+<code class="sig-name descname">mp3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Streams.mp3" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list with Stream objects that contains the source url and extra information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a list with Stream objects</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list, <a class="reference internal" href="#qmusic.Stream" title="qmusic.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Streams.radioplayer_id">
+<code class="sig-name descname">radioplayer_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Streams.radioplayer_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list with Stream objects that contains the source url and extra information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a Stream object</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list, <a class="reference internal" href="#qmusic.Stream" title="qmusic.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Streams.video">
+<code class="sig-name descname">video</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Streams.video" title="Permalink to this definition">¶</a></dt>
+<dd><p>A list with Stream objects that contains the source url and extra information</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a list with Stream objects</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list, <a class="reference internal" href="#qmusic.Stream" title="qmusic.Stream"><code class="xref py py-class docutils literal notranslate"><span class="pre">Stream</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="qmusic.Mobile">
+<em class="property">class </em><code class="sig-prename descclassname">qmusic.</code><code class="sig-name descname">Mobile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">json</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Mobile" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="qmusic.Mobile.audio">
+<code class="sig-name descname">audio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Mobile.audio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the audio url for mobile</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the audio url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Mobile.live">
+<code class="sig-name descname">live</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Mobile.live" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the live url for mobile</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the live url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Mobile.video">
+<code class="sig-name descname">video</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Mobile.video" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the video url for mobile</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the video url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="qmusic.Android">
+<em class="property">class </em><code class="sig-prename descclassname">qmusic.</code><code class="sig-name descname">Android</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">json</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Android" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="qmusic.Android.high">
+<code class="sig-name descname">high</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Android.high" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the high quality url for Android</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the high quality url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Android.low">
+<code class="sig-name descname">low</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Android.low" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the low quality url for Android</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the low quality url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Android.video">
+<code class="sig-name descname">video</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Android.video" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the video url for Android</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the video url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="qmusic.Iphone">
+<em class="property">class </em><code class="sig-prename descclassname">qmusic.</code><code class="sig-name descname">Iphone</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">json</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Iphone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="qmusic.Iphone.live">
+<code class="sig-name descname">live</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Iphone.live" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the live url for Iphone</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the live url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Iphone.video">
+<code class="sig-name descname">video</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Iphone.video" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the video url for Iphone</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the video url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="qmusic.Stream">
+<em class="property">class </em><code class="sig-prename descclassname">qmusic.</code><code class="sig-name descname">Stream</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">json</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Stream" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="qmusic.Stream.extra">
+<code class="sig-name descname">extra</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Stream.extra" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a list with extra information about the Stream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a list with extra information about the Stream or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Stream.source">
+<code class="sig-name descname">source</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Stream.source" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the source url of the Stream</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the source url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="qmusic.Logo">
+<em class="property">class </em><code class="sig-prename descclassname">qmusic.</code><code class="sig-name descname">Logo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">json</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="qmusic.Logo.active_android_url">
+<code class="sig-name descname">active_android_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.active_android_url" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.active_iphone_url">
+<code class="sig-name descname">active_iphone_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.active_iphone_url" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.app_card">
+<code class="sig-name descname">app_card</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.app_card" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.app_messages_avatar">
+<code class="sig-name descname">app_messages_avatar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.app_messages_avatar" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.app_player_bg_phone">
+<code class="sig-name descname">app_player_bg_phone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.app_player_bg_phone" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.app_player_bg_tablet">
+<code class="sig-name descname">app_player_bg_tablet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.app_player_bg_tablet" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.app_player_header">
+<code class="sig-name descname">app_player_header</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.app_player_header" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.app_player_icon">
+<code class="sig-name descname">app_player_icon</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.app_player_icon" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.app_player_small">
+<code class="sig-name descname">app_player_small</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.app_player_small" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.app_player_thumbnail">
+<code class="sig-name descname">app_player_thumbnail</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.app_player_thumbnail" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.app_square">
+<code class="sig-name descname">app_square</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.app_square" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.appletv_background">
+<code class="sig-name descname">appletv_background</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.appletv_background" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.homepage_banner">
+<code class="sig-name descname">homepage_banner</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.homepage_banner" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.inactive_android_url">
+<code class="sig-name descname">inactive_android_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.inactive_android_url" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.inactive_iphone_url">
+<code class="sig-name descname">inactive_iphone_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.inactive_iphone_url" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.radioplayer_banner">
+<code class="sig-name descname">radioplayer_banner</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.radioplayer_banner" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.radioplayer_cover">
+<code class="sig-name descname">radioplayer_cover</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.radioplayer_cover" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.site_background">
+<code class="sig-name descname">site_background</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.site_background" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Logo.site_logo">
+<code class="sig-name descname">site_logo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Logo.site_logo" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the image url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="qmusic.Color">
+<em class="property">class </em><code class="sig-prename descclassname">qmusic.</code><code class="sig-name descname">Color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">json</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Color" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="qmusic.Color.background">
+<code class="sig-name descname">background</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Color.background" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a hex string with the background color</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the background color hex</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Color.extra">
+<code class="sig-name descname">extra</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Color.extra" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a hex string with an extra color</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with an extra color hex or #ffffff if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Color.foreground">
+<code class="sig-name descname">foreground</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Color.foreground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a hex string with the foreground color</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the foreground color hex</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="qmusic.Song">
+<em class="property">class </em><code class="sig-prename descclassname">qmusic.</code><code class="sig-name descname">Song</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">json</span></em>, <em class="sig-param"><span class="n">BASE</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="qmusic.Song.affiliate_url">
+<code class="sig-name descname">affiliate_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song.affiliate_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the affiliate url of a song</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return a string with the affiliate url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Song.artist">
+<code class="sig-name descname">artist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song.artist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the artist of a song</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return an Artist object</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#qmusic.Artist" title="qmusic.Artist"><code class="xref py py-class docutils literal notranslate"><span class="pre">Artist</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Song.featuring_artists">
+<code class="sig-name descname">featuring_artists</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song.featuring_artists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the featuring artists of a song</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return a list with Artist objects of the featuring artists.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list, <a class="reference internal" href="#qmusic.Artist" title="qmusic.Artist"><code class="xref py py-class docutils literal notranslate"><span class="pre">Artist</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Song.played_at">
+<code class="sig-name descname">played_at</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song.played_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the timestamp of when the song started playing</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return a datetime.datetime object</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>datetime.datetime</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Song.preview_url">
+<code class="sig-name descname">preview_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song.preview_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the preview url of a song. IT gives an url with the mp3 file of the first 30 seconds of the song.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return a string with the preview url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Song.release_year">
+<code class="sig-name descname">release_year</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song.release_year" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the release year of a song</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return a string with the release year or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Song.selector_code">
+<code class="sig-name descname">selector_code</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song.selector_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the selector code of a song</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return a string with the selector code</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Song.slug">
+<code class="sig-name descname">slug</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song.slug" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the slug of the song. E.g. all-i-want-for-christmas-is-you</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return a string with the slug</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Song.spotify_url">
+<code class="sig-name descname">spotify_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song.spotify_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the spotify url of a song</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return a string with the spotify url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Song.thumbnail_url">
+<code class="sig-name descname">thumbnail_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song.thumbnail_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the thumbnail url of a song</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return a string with the thumbnail url</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Song.title">
+<code class="sig-name descname">title</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song.title" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the title of the song.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return a string with the title</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Song.youtube_url">
+<code class="sig-name descname">youtube_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Song.youtube_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the youtube url of a song</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Return a string with the spotiyoutubefy url or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="qmusic.Artist">
+<em class="property">class </em><code class="sig-prename descclassname">qmusic.</code><code class="sig-name descname">Artist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">json</span></em>, <em class="sig-param"><span class="n">BASE</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Artist" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="qmusic.Artist.bio">
+<code class="sig-name descname">bio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Artist.bio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the bio of the artist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the bio of the artist</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Artist.country_code">
+<code class="sig-name descname">country_code</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Artist.country_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the country code from where the artist is``</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the country code from where the artist is or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Artist.country_name">
+<code class="sig-name descname">country_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Artist.country_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the country name from where the artist is``</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the country name from where the artist is or None if it isn’t available</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str, bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Artist.id_code">
+<code class="sig-name descname">id_code</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Artist.id_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the id/selector_code of the artist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns an int with the id of the artist</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Artist.name_all_artist">
+<code class="sig-name descname">name_all_artist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Artist.name_all_artist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the string with all the names of the song artists. E.g.: ‘LOST FREQUENCIES &amp; MATHIEU KOSS’</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with all the song artists names</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Artist.name_main_artist">
+<code class="sig-name descname">name_main_artist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Artist.name_main_artist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the string with the name of the artist. E.g.: ‘LOST FREQUENCIES’</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the song artist name</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Artist.photo">
+<code class="sig-name descname">photo</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Artist.photo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the photo url of the artist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the photo url of the artist</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Artist.slug">
+<code class="sig-name descname">slug</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Artist.slug" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the slug of the artist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the slug of the artist</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Artist.social_medias">
+<code class="sig-name descname">social_medias</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Artist.social_medias" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the social medias of the artist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a dict with the social medias. E.g. {‘facebook_url’: ‘<a class="reference external" href="https://www.facebook.com/RolfSanchez">https://www.facebook.com/RolfSanchez</a>’, ‘twitter_url’: ‘<a class="reference external" href="https://twitter.com/rolfsanchez">https://twitter.com/rolfsanchez</a>’, ‘instagram_url’: ‘<a class="reference external" href="https://www.instagram.com/rolfsanchez/">https://www.instagram.com/rolfsanchez/</a>’, ‘website’: ‘<a class="reference external" href="https://rolf-music.com/">https://rolf-music.com/</a>’}</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="qmusic.Edition">
+<em class="property">class </em><code class="sig-prename descclassname">qmusic.</code><code class="sig-name descname">Edition</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">json</span></em><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Edition" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt id="qmusic.Edition.name">
+<code class="sig-name descname">name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Edition.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the edition</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the name of the edition</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Edition.release_year">
+<code class="sig-name descname">release_year</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Edition.release_year" title="Permalink to this definition">¶</a></dt>
+<dd><p>The release year of the edition</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns a string with the release year of the edition</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="qmusic.Edition.song_position">
+<code class="sig-name descname">song_position</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qmusic.Edition.song_position" title="Permalink to this definition">¶</a></dt>
+<dd><p>The position of the song in the edition</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Returns an int with the position of the song in the edition</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, Joppe Wolters (svenskithesource)
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

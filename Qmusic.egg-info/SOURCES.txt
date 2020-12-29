@@ -1,0 +1,9 @@
+README.md
+setup.py
+Qmusic.egg-info/PKG-INFO
+Qmusic.egg-info/SOURCES.txt
+Qmusic.egg-info/dependency_links.txt
+Qmusic.egg-info/requires.txt
+Qmusic.egg-info/top_level.txt
+qmusic/__init__.py
+qmusic/qmusic.py
